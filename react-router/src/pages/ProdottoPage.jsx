@@ -1,0 +1,25 @@
+// import "./ProdottoPage.css";
+import { useParams, useNavigate } from "react-router";
+import NavHeader from "../components/NavHeader";
+import Prodotto from "../components/Prodotto";
+
+function ProdottoPage() {
+    const { id } = useParams();
+    return (
+        <>
+            <div id="prodotti" className="page-flex">
+                <div className="container">
+                    <header>
+                        <h1>Prodotto con ID: {`${id}`}</h1>
+                        <NavHeader />
+                    </header>
+                    <main>
+                        <Prodotto />
+                    </main>
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default ProdottoPage;

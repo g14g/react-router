@@ -1,0 +1,13 @@
+#prodotti {
+    --bg-color: #202020;
+    background-color: var(--bg-color);
+    /* background-color: #202020; */
+    /* background-color: #272727; */
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+}

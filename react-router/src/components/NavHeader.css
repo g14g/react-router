@@ -1,0 +1,29 @@
+nav#nav-header {
+
+    margin-top: 3rem;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+
+        li {
+            a {
+                font-size: 1.618rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+                text-decoration: none;
+                padding: 1rem;
+
+                &.active {
+                    color: var(--bg-color);
+                    background-color: #ffffff;
+                    border-radius: 0.75rem;
+                }
+            }
+        }
+    }
+}
