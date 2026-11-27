@@ -1,9 +1,9 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router";
-import "./Prodotti.css";
-import CardProdotto from "./CardProdotto";
+import "./ProdottiLista.css";
+import CardProdottiLista from "./CardProdottiLista";
 
-function Prodotti() {
+function ProdottiPageLista() {
     // Qui è importante impostare il tipo di useState in array [], perché i dati provenienti dalla fetch sono array di oggetti
     const [productItems, setProductItems] = useState([]);
 
@@ -45,7 +45,7 @@ function Prodotti() {
             //         </p>
             //     </div>
             // </Link>
-            <CardProdotto key={product.id} id={product.id} link={`/prodotto/${product.id}`} img={product.image} title={product.title} price={product.price} />
+            <CardProdottiLista key={product.id} id={product.id} link={`/prodotto/${product.id}`} img={product.image} title={product.title} price={product.price} />
         );
     });
 
@@ -72,4 +72,4 @@ function Prodotti() {
     );
 }
 
-export default Prodotti;
+export default ProdottiPageLista;

@@ -1,6 +1,6 @@
 import "./ProdottiPage.css";
 import NavHeader from "../components/NavHeader";
-import Prodotti from "../components/Prodotti";
+import ProdottiLista from "../components/ProdottiLista";
 
 function ProdottiPage() {
     return (
@@ -12,7 +12,7 @@ function ProdottiPage() {
                         <NavHeader />
                     </header>
                     <main>
-                        <Prodotti />
+                        <ProdottiLista />
                     </main>
                 </div>
             </div>

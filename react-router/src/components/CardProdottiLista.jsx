@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useEffect } from "react";
-import "./CardProdotto.css";
+import "./CardProdottiLista.css";
 import { Link } from "react-router";
 
-function CardProdotto(props) {
+function CardProdottiLista(props) {
     // console.log("props:", props);
     return (
         <>
@@ -22,4 +22,4 @@ function CardProdotto(props) {
     );
 }
 
-export default CardProdotto;
+export default CardProdottiLista;

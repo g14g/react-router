@@ -1,9 +1,8 @@
-// import "./ProdottoPage.css";
 import { useParams, useNavigate } from "react-router";
 import NavHeader from "../components/NavHeader";
-import Prodotto from "../components/Prodotto";
+import ProdottoSingolo from "../components/ProdottoSingolo";
 
-function ProdottoPage() {
+function ProdottoSingoloPage() {
     const { id } = useParams();
     return (
         <>
@@ -14,7 +13,7 @@ function ProdottoPage() {
                         <NavHeader />
                     </header>
                     <main>
-                        <Prodotto />
+                        <ProdottoSingolo />
                     </main>
                 </div>
             </div>
@@ -22,4 +21,4 @@ function ProdottoPage() {
     );
 }
 
-export default ProdottoPage;
+export default ProdottoSingoloPage;

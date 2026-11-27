@@ -1,6 +1,6 @@
 nav#nav-header {
 
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 
     ul {
         list-style: none;
@@ -14,13 +14,17 @@ nav#nav-header {
                 font-size: 1.618rem;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: #ffffff;
+                /* color: #ffffff; */
+                color: rgba(255, 255, 255, 0.5);
                 text-decoration: none;
                 padding: 1rem;
 
                 &.active {
-                    color: var(--bg-color);
-                    background-color: #ffffff;
+                    /* color: var(--bg-color); */
+                    color: rgba(255, 255, 255, 0.5);
+                    /* background-color: #ffffff; */
+                    background-color: #272727;
+                    border: 1px solid #323232;
                     border-radius: 0.75rem;
                 }
             }

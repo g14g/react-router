@@ -1,10 +1,10 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router";
 import { useParams, useNavigate } from "react-router";
-import "./Prodotti.css";
-import CardProdotto from "./CardProdotto";
+import "./ProdottiSingolo.css";
+import CardProdottoSingolo from "./CardProdottoSingolo";
 
-function Prodotti() {
+function ProdottoSingolo() {
     // Qui è importante INVECE impostare il tipo di useState in oggetto [], perché i dati provenienti dai singoli prodotti della fetch sono oggetti
     const [productItem, setProductItem] = useState({});
 
@@ -55,7 +55,7 @@ function Prodotti() {
 
     return (
         <>
-            <CardProdotto key={productItem.id} id={productItem.id} link={`/prodotto/${productItem.id}`} img={productItem.image} title={productItem.title} price={productItem.price} />
+            <CardProdottoSingolo key={productItem.id} id={productItem.id} link={`/prodotto/${productItem.id}`} img={productItem.image} title={productItem.title} description={productItem.description} price={productItem.price} />
             {/* {productItems.map((product) => {
                 return (
                     <a key={product.id} href="#">
@@ -76,4 +76,4 @@ function Prodotti() {
     );
 }
 
-export default Prodotti;
+export default ProdottoSingolo;
